@@ -1,6 +1,11 @@
 * {
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+}
+
+::selection {
+    color: white;
+    background: black;
 }
 
 .header-cont {
@@ -34,4 +39,106 @@
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.home-btn {
+    position: absolute;
+    top: 63%;
+    left: 53%;
+    transform: translate(-63%, -53%);
+    display: flex;
+    gap: 10px;
+}
+
+.btn-1, .btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 120px;
+    min-height: 50px;
+    font-size: 17px;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home-svg {
+    min-height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(-45%, -49%);
+    color: #d4d4d4;
+    cursor: pointer;
+}
+
+.home-svg:hover {
+    color: black;
+}
+
+.top-cont {
+    display: flex;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+}
+
+.btn-1:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-2:hover {
+    color: white;
+    background-color: black;
+}
+
+.example {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1250px) {
+    .home-cont {
+        height: 140vh;
+    }
+    .example {
+        bottom: -40%;
+    }
+}
+
+.home-def {
+    max-width: 300px;
+    margin-top: 100px;
+}
+
+.lesson-cont {
+    display: flex;
+    height: 100vh;
+}
+
+.mark-cont {
+    width: 38vw;
+    margin: 20px;
+}
+
+.custom-layout {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 62vw;
 }
