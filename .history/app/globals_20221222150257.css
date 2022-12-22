@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header-cont {
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    align-items: center;
+}
+
+.text-black {
+    top: 0;
+    right: 0;
+    max-height: 50px;
+}
+
+.des-cont {
+    display: flex;
+    gap: 5px;
+}
+
+.defi {
+    max-width: 200px;
+    align-self: flex-end;
+    margin-bottom: 6px;
+    font-weight: 350;
+}
+
+.link-cont {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.lesson-cont {
+    display: flex;
+    height: 100vh;
+}
+
+.mark-cont {
+    wid
+}
+
+.sandpack-cont {
+    display: flex;
+    flex-direction: column;
+}

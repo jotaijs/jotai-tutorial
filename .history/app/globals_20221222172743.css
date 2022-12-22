@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
+
+.header-cont {
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    align-items: center;
+}
+
+.text-black {
+    top: 0;
+    right: 0;
+    max-height: 50px;
+}
+
+.des-cont {
+    display: flex;
+    gap: 5px;
+}
+
+.defi {
+    max-width: 200px;
+    align-self: flex-end;
+    margin-bottom: 6px;
+    font-weight: 350;
+}
+
+.link-cont {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.home-btn {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-63%, -50%);
+    display: flex;
+    gap: 10px;
+}
+
+.btn-1, .btn-2 {
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home-svg {
+    min-height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    transform: translate(-45%, -47%);
+    color: #d4d4d4;
+    cursor: pointer;
+}
+
+.home-svg:hover {
+    color: black;
+}
+
+.jotai-img {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+    animation: up-down 2s ease infinite;
+    position: relative;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-10ox);
+    }
+    
+    50% {
+        transform: translateY(10%);
+    }
+    
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+.btn-1:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-2:hover {
+    color: white;
+    background-color: black;
+}
+
+.example {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: fit-content;
+}
+
+.lesson-cont {
+    display: flex;
+    height: 100vh;
+}
+
+.mark-cont {
+    width: 38vw;
+    margin: 20px;
+}
+
+.custom-layout {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 62vw;
+}
