@@ -1,5 +1,4 @@
 export const example = `
-
 ~~~js
 import { atom, useAtom } from 'jotai';
 

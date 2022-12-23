@@ -9,53 +9,57 @@ import setupStyles from './styles';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 function page() {
-    return (
-        <div className='lesson-cont'>
-            <div className='mark-cont'>
-                <Markdown
-                    children={markdown}
-                    components={{
-                        code({node, inline, className, children, ...props}) {
-                          const match = /language-(\w+)/.exec(className || '')
-                          return !inline && match ? (
-                            <SyntaxHighlighter
-                              children={String(children).replace(/\n$/, '')}
-                              language={match[1]}
-                              PreTag="div"
-                              {...props}
-                            />
-                          ) : (
-                            <code className={className} {...props}>
-                              {children}
-                            </code>
-                          )
-                        }
-                      }}
-                />
-            </div>
+  return (
+    <div className='lesson-cont'>
+      <div className='mark-cont'>
+        <Markdown
+          className="line-break"
+          components={{
+            code({ node, inline, className, children, ...props }: any) {
+              const match = /language-(\w+)/.exec(className || '')
+              return !inline && match ? (
+                <SyntaxHighlighter
+                  language={match[1]}
+                  PreTag="div"
+                  {...props}
+                >
+                  {String(children).replace(/\n$/, '')}
+                </SyntaxHighlighter>
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              )
+            }
+          }}
+        >
+          {markdown}
+        </Markdown>
+      </div>
 
-            <Sandpack
-                template="react"
-                files={{
-                    ...files,
-                    ...setupStyles
-                }}
+      <Sandpack
+        template="react"
+        files={{
+          ...files,
+          ...setupStyles
+        }}
 
-                options={{
-                    classes: {
-                        "sp-wrapper": "custom-wrapper",
-                        "sp-layout": "custom-layout",
-                        "sp-tab-button": "custom-tab",
-                    },
-                }}
-                customSetup={{
-                    dependencies: {
-                        "jotai": "^1.12.0",
-                    },
-                }}
-            />
-        </div>
-    )
+        options={{
+          classes: {
+            "sp-wrapper": "custom-wrapper",
+            "sp-layout": "custom-layout",
+            "sp-tab-button": "custom-tab",
+          },
+          showTabs: true
+        }}
+        customSetup={{
+          dependencies: {
+            "jotai": "^1.12.0",
+          },
+        }}
+      />
+    </div>
+  )
 }
 
 export default page
