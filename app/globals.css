@@ -8,24 +8,24 @@
     background: black;
 }
 
+.line-break {
+    white-space: pre-wrap;
+}
+
 .header-cont {
     padding: 0 15px 0 15px;
     display: flex;
     justify-content: space-between;
-    height: 85px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 3px 0px;
     align-items: center;
 }
 
 .text-black {
-    top: 0;
-    right: 0;
-    max-height: 50px;
-}
-
-.des-cont {
-    display: flex;
-    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    max-height: 30px;
 }
 
 .defi {
@@ -127,7 +127,7 @@
 
 .lesson-cont {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 
 .mark-cont {
@@ -139,6 +139,6 @@
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 62vw;
 }
