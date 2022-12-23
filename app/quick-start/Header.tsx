@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import jotia_mascot from "../public/jotai-mascot.png";
-import github_icon from "../public/github.png";
+import jotia_mascot from "../../public/jotai-mascot.png";
+import github_icon from "../../public/github.png";
+import Hamburger from "./Hamburger";
 
 function Header() {
   return (
@@ -33,10 +34,11 @@ function Header() {
           fill="currentColor"
         ></path>
       </svg>
-      <Image src={jotia_mascot} alt="ghost" width={45} height={40} />
+
+      <Hamburger />
 
       <div className="link-cont">
-        <Image src={github_icon} alt="bhoot" width={30} height={30} />
+        <Image src={github_icon} alt="bhoot" width={40} height={40} />
       </div>
     </div>
   );
