@@ -38,7 +38,7 @@ function page() {
         >
           {markdown}
         </Markdown>
-        <Link className="next-link" href="/quick-start/theme-setting">
+        <Link className="next-link" href="/quick-start/persisting-state">
           Next {"->"}
         </Link>
       </div>
