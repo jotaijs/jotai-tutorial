@@ -138,18 +138,26 @@ h2 {
 .lesson-cont {
   display: flex;
   height: calc(100vh - 60px);
+  overflow-y: scroll;
 }
 
 .mark-cont {
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
   width: 38vw;
   margin: 20px;
 }
 
 .next-link {
-  position: absolute;
-  bottom: 1%;
-  right: 1%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 30px;
   font-size: 18px;
   color: black;
 }

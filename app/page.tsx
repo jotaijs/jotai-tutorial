@@ -5,6 +5,7 @@ import jotia_mascot from "../public/jotai-mascot.png";
 import Markdown from "react-markdown";
 import { example } from "./example";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coldarkCold } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import Link from "next/link";
 
 export default function Home() {
@@ -66,7 +67,7 @@ export default function Home() {
             code({ node, inline, className, children, ...props }: any) {
               const match = /language-(\w+)/.exec(className || "");
               return !inline && match ? (
-                <SyntaxHighlighter language={match[1]} PreTag="div" {...props}>
+                <SyntaxHighlighter language={match[1]} style={coldarkCold} PreTag="div" {...props}>
                   {String(children).replace(/\n$/, "")}
                 </SyntaxHighlighter>
               ) : (
