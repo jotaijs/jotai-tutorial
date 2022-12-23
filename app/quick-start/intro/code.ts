@@ -14,9 +14,9 @@ export default function Page() {
 }`;
 
 const files = {
-    '/App.js': {
-        code: code
-    }
-}
+  "/App.js": {
+    code: code,
+  },
+};
 
-export default files
+export default files;

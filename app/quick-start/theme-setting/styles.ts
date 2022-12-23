@@ -3,6 +3,16 @@ const StylesCss = `
     font-family: sans-serif;
     font-weight: normal;
   }
+  .dark {
+    color: white;
+    background: black;
+  }
+  .light {
+    color: black;
+    background: white;
+  }
+  button {
+  }
 `;
 
 const setupStyles = {
