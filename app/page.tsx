@@ -59,6 +59,9 @@ export default function Home() {
         <Link href="/" className="btn-2">
           Tutorial
         </Link>
+        <Link href="/playground" className="btn-3">
+          Playground
+        </Link>
       </div>
 
       <div className="example">

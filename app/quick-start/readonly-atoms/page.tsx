@@ -21,8 +21,8 @@ function page() {
               const match = /language-(\w+)/.exec(className || "");
               return !inline && match ? (
                 <SyntaxHighlighter
-                  style={coldarkCold}
                   language={match[1]}
+                  style={coldarkCold}
                   PreTag="div"
                   {...props}
                 >
@@ -38,7 +38,7 @@ function page() {
         >
           {markdown}
         </Markdown>
-        <Link className="next-link" href="readonly-atoms">
+        <Link className="next-link" href="/quick-start/read-write-atoms">
           Next {"->"}
         </Link>
       </div>

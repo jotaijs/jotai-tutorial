@@ -54,13 +54,13 @@ h2 {
   position: absolute;
   top: 63%;
   left: 53%;
-  transform: translate(-63%, -53%);
+  transform: translate(-53%, -53%);
   display: flex;
   gap: 10px;
 }
 
 .btn-1,
-.btn-2 {
+.btn-2, .btn-3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,19 +69,21 @@ h2 {
   min-height: 50px;
   font-size: 17px;
   background: black;
+  border: 2px solid black !important;
   color: white;
   border: none;
   outline: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .home-svg {
   min-height: 100px;
   position: absolute;
   top: 45%;
-  left: 49%;
-  transform: translate(-45%, -49%);
+  left: 52%;
+  transform: translate(-50%, -49%);
   color: #d4d4d4;
   cursor: pointer;
 }
@@ -100,13 +102,11 @@ h2 {
 .btn-1:hover {
   color: black;
   background-color: white;
-  border: 2px solid black;
 }
 
 .btn-2 {
   color: black;
   background-color: white;
-  border: 2px solid black;
 }
 
 .btn-2:hover {
@@ -114,20 +114,16 @@ h2 {
   background-color: black;
 }
 
-.example {
-  position: absolute;
-  bottom: 0;
-  right: 2%;
-  width: fit-content;
+.btn-3:hover {
+  color: black;
+  background-color: white;
 }
 
-@media screen and (max-width: 1250px) {
-  .home-cont {
-    height: 140vh;
-  }
-  .example {
-    bottom: -40%;
-  }
+.example {
+  position: absolute;
+  bottom: -35%;
+  right: 2%;
+  width: fit-content;
 }
 
 .home-def {

@@ -10,11 +10,11 @@ function Hamburger() {
             </label>
 
             <ul className="menu__box">
-                <li><a className="menu__item" href="#">Home</a></li>
-                <li><a className="menu__item" href="#">About</a></li>
-                <li><a className="menu__item" href="#">Team</a></li>
-                <li><a className="menu__item" href="#">Contact</a></li>
-                <li><a className="menu__item" href="#">Twitter</a></li>
+                <li><a className="menu__item" href="#">Intro</a></li>
+                <li><a className="menu__item" href="#">Theme Setup</a></li>
+                <li><a className="menu__item" href="#">Persisting State</a></li>
+                <li><a className="menu__item" href="#">Readonly Atoms</a></li>
+                <li><a className="menu__item" href="#">ReadWrite Atoms</a></li>
             </ul>
         </div>
     )
