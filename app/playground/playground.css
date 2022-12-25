@@ -1,24 +1,47 @@
-.custom-layout {
-    display: flex;
-    flex-direction: row;
-}
-
 .sp-layout {
-    width: 100vw;
-    height: 100vh;
+    height: 100vh !important;
 }
 
-.sp-stack {
-    min-height: 100vh;
+.sp-c-bNbSGz {
+    font-size: 15px;
 }
 
-@media screen and (max-width: 1000px) {
-    .custom-layout {
-        display: flex;
-        flex-direction: column;
+.newfile {
+    height: 40px;
+}
+
+.btn {
+    background: white;
+    height: inherit;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    height: inherit;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .sp-c-ctabmA > .sp-file-explorer {
+        height: 100vh !important;
     }
 
     .sp-stack {
-        min-height: auto;
+        height: 100vh !important;
     }
 }

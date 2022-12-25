@@ -1,4 +1,4 @@
-const code = `import { atom, useAtom } from 'jotai';
+export const code = `import { atom, useAtom } from 'jotai';
 
 const counter = atom(0);
 
@@ -12,11 +12,3 @@ export default function Page() {
     </div>
   )
 }`;
-
-const files = {
-  "/App.js": {
-    code: code,
-  },
-};
-
-export default files;
