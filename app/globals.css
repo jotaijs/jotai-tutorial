@@ -146,7 +146,7 @@ h2 {
   flex-direction: column;
   gap: 20px;
   width: 38vw;
-  margin: 20px;
+  padding: 20px;
 }
 
 .next-link {

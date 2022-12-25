@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codesandbox/sandpack-client": "^1.18.0",
     "@codesandbox/sandpack-react": "^1.18.4",
     "@next/font": "^13.0.7",
     "@types/node": "18.11.17",
@@ -20,6 +21,7 @@
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "react-markdown": "^8.0.4",
     "react-syntax-highlighter": "^15.5.0",
     "typescript": "4.9.4"
