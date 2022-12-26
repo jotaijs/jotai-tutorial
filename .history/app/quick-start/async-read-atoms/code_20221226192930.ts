@@ -20,6 +20,8 @@ export default function Page() {
     </Suspense>
   )
 }
+
+
 `;
 
 const files = {
