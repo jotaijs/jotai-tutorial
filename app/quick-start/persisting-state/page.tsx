@@ -7,7 +7,7 @@ import { markdown } from "./markdown";
 import files from "./code";
 import setupStyles from "./styles";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { coldarkCold } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import Link from "next/link";
 
 function page() {
@@ -21,7 +21,7 @@ function page() {
               const match = /language-(\w+)/.exec(className || "");
               return !inline && match ? (
                 <SyntaxHighlighter
-                  style={coldarkCold}
+                  style={vscDarkPlus}
                   language={match[1]}
                   PreTag="div"
                   {...props}
@@ -38,7 +38,7 @@ function page() {
         >
           {markdown}
         </Markdown>
-        <Link className="next-link" href="readonly-atoms">
+        <Link className="next-link" href="/quick-start/readonly-atoms">
           Next {"->"}
         </Link>
       </div>
