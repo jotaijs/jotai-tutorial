@@ -68,10 +68,10 @@ span {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 300px;
+    width: 230px;
     height: 100%;
     margin: 0;
-    padding: 80px 0;
+    padding: 60px 0;
     list-style: none;
     background-color: #ECEFF1;
     box-shadow: 2px 2px 6px rgba(37, 36, 36, 0.4);
@@ -80,14 +80,15 @@ span {
 
 .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding: 12px 20px;
     color: #525253;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     text-decoration: none;
-    transition-duration: .25s;
+    transition-duration: .3s;
 }
 
 .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: black;
+    color: white;
 }

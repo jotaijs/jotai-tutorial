@@ -10,11 +10,12 @@ function Hamburger() {
             </label>
 
             <ul className="menu__box">
-                <li><a className="menu__item" href="#">Intro</a></li>
-                <li><a className="menu__item" href="#">Theme Setup</a></li>
-                <li><a className="menu__item" href="#">Persisting State</a></li>
-                <li><a className="menu__item" href="#">Readonly Atoms</a></li>
-                <li><a className="menu__item" href="#">ReadWrite Atoms</a></li>
+                <li><a className="menu__item" href="/quick-start/intro">Introduction</a></li>
+                <li><a className="menu__item" href="/quick-start/theme-setting">Theme Setup</a></li>
+                <li><a className="menu__item" href="/quick-start/persisiing-state">Persisting State</a></li>
+                <li><a className="menu__item" href="/quick-start/readonly-atoms">Readonly Atoms</a></li>
+                <li><a className="menu__item" href="/quick-start/read-write-atoms">ReadWrite Atoms</a></li>
+                <li><a className="menu__item" href="/quick-start/async-read-atoms">Async Read Atoms</a></li>
             </ul>
         </div>
     )
