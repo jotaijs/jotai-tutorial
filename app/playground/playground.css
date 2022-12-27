@@ -36,7 +36,7 @@ a {
     width: 20px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
     .sp-c-ctabmA > .sp-file-explorer {
         height: 100vh !important;
     }

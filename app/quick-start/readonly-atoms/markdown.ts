@@ -1,5 +1,5 @@
 export const markdown = `
-# Readonly atoms
+# Read Only atoms
 
 Readonly atoms are the atoms that are derived from or rely's on other atoms.  We can't change their value because they do not have any setter function, let's see how we define a readonly atom.
 
