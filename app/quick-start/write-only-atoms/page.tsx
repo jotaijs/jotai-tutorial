@@ -38,7 +38,7 @@ function page() {
         >
           {markdown}
         </Markdown>
-        <Link className="next-link" href="/quick-start/async-write-atoms">
+        <Link className="next-link" href="/quick-start/read-write-atoms">
           Next {"->"}
         </Link>
       </div>

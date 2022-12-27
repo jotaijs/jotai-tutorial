@@ -14,8 +14,10 @@ function Hamburger() {
                 <li><a className="menu__item" href="/quick-start/theme-setting">Theme Setup</a></li>
                 <li><a className="menu__item" href="/quick-start/persisiing-state">Persisting State</a></li>
                 <li><a className="menu__item" href="/quick-start/readonly-atoms">Readonly Atoms</a></li>
+                <li><a className="menu__item" href="/quick-start/write-only-atoms">Writeonly Atoms</a></li>
                 <li><a className="menu__item" href="/quick-start/read-write-atoms">ReadWrite Atoms</a></li>
                 <li><a className="menu__item" href="/quick-start/async-read-atoms">Async Read Atoms</a></li>
+                <li><a className="menu__item" href="/quick-start/async-write-atoms">Async Write Atoms</a></li>
             </ul>
         </div>
     )

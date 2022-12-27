@@ -10,7 +10,7 @@
 
 h1,
 h2 {
-  color: #bcbcbc;
+  color: black;
 }
 
 .line-break {
@@ -28,6 +28,12 @@ h2 {
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 3px 0px;
   align-items: center;
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
 }
 
 .text-black {
