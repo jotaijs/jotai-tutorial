@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import jotia_mascot from "../../public/jotai-mascot.png";
 import github_icon from "../../public/github.png";
 import Hamburger from "./Hamburger";
 
