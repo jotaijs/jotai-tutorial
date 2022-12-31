@@ -1,15 +1,15 @@
 export const markdown = `
-# Read-Write atoms
+# Read Write atoms
 
-Unlike the Readonly atoms they can be modified on their own, when we set it's value it also modified the atom it is derived from, it's is two-way data binding so be carefull working with these types of atoms.
+As we can guess from the name these atoms can do both reading an atoms value or modifying it.
 
 ~~~js
-const readWriteAtom = atom(
-  (get) => get(count),
-  (get, set, newCount) => {
+const readWriteAtom = atom((get) => 2 * get(count),
+(get, set, newCount) => {
     set(count, newCount / 2);
   },
 );
 ~~~
 
+The first parameter is for reading and the second is for modifying the atom value.
 `

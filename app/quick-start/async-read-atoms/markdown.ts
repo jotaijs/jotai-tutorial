@@ -3,24 +3,25 @@ export const markdown = `
 
 Using async atoms, you gain access to real-world data while still managing them directly from your atoms and with incredible ease.
 
-We can separate them in two main categories:
+We can separate async atoms in two main categories:
 •Async read atoms
 •Async write atoms
 
-Let's see first how we declare async read atoms,
+Let's see first the async read atoms,
 ~~~js
 const counter = atom(0);
 const asyncAtom = atom(async (get) => get(counter) * 5);
 ~~~
 
-We suspend the rendering using **React Suspense**.
+Jotai is inherently leveraging **Suspense** to handle asynchronous flows.
+
 ~~~js
 <Suspense fallback={<span>loading...</span>}>
       <AsyncComponent />
 </Suspense>
 ~~~
 
-But there is a more jotai way of doing this with the **loadable** api present in jotai/utils. Simply wrap the atom in loadable util and it returns the value with one of the three states: **loadable**, **hasData** and **hasError**. Now there is no need to wrap your component by a **Suspense** element.
+But there is a more jotai way of doing this with the **loadable api** present in jotai/utils. By simply wrapping the atom in loadable util and it returns the value with one of the three states: **loadable**, **hasData** and **hasError**.
 
 ~~~js
 {
@@ -33,14 +34,15 @@ But there is a more jotai way of doing this with the **loadable** api present in
 ~~~js
 import { loadable } from "jotai/utils"
 
-const asyncAtom = atom(async (get) => get(countAtom))
+const countAtom = atom(0);
+const asyncAtom = atom(async (get) => get(countAtom));
 const loadableAtom = loadable(asyncAtom)
-const Component = () => {
+const AsyncComponent = () => {
   const [value] = useAtom(loadableAtom)
-  if (value.state === 'hasError') return <Text>{value.error}</Text>
+  if (value.state === 'hasError') return <div>{value.error}</div>
   if (value.state === 'loading') {
-    return <Text>Loading...</Text>
+    return <div>Loading...</div>
   }
-  return <Text>Value: {value.data}</Text>
+  return <div>Value: {value.data}</div>
 ~~~
 `;

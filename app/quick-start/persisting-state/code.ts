@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className={appTheme? 'dark': 'light'}>
       <h1>This is a theme switcher</h1>
-      <button onClick={handleClick}>{appTheme? '🌑': '☀️'}</button>
+      <button onClick={handleClick}>{appTheme? 'DARK': 'LIGHT'}</button>
     </div>
   )
 }`;
