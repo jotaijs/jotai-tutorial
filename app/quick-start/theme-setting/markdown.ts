@@ -3,15 +3,18 @@ export const markdown = `
 
 Developers love dark theme but setting up the theme can be very hectic for the developers as when there are many components in your app and you have to pass your theme props very deep in the component tree where things can become ambigous.
 
-Doing the same task with the help of jotai atoms you can setup different themes for you app in minutes. Let's see how we do this,
-Initialize a theme atom with a default value and passed it to the **useState** hook with a setAppTheme() function.
+Doing the same task with the help of jotai you can setup different themes for you app in minutes. Let's see how we do this,
+Initialize a theme atom with a default value. 
 
 ~~~js
 const theme = atom('light');
 ~~~
 
-When we click on button setAppTheme() function setup the theme value to dark if the previous value of theme is light and vice-versa.
+Passed the atom to the **useState** hook.
 
-That's the power of jotai atoms, we able to setup our theme switcher in less then 15 lines of code. Also we can import our theme atom to any component we want and use it's value or change it accordingly to our needs.
+~~~js
+const [appTheme, setAppTheme] = useAtom(theme);
+~~~
 
+That's all we have to do to define a global theme state which is accessible to all components of your app.
 `;

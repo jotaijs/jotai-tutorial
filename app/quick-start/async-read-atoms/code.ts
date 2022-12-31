@@ -2,7 +2,7 @@ const code = `import { atom, useAtom } from 'jotai';
 import { Suspense } from 'react'
 
 const counter = atom(1);
-const asyncAtom = atom(async (get) => get(counter));
+const asyncAtom = atom(async (get) => get(counter) * 5);
 
 function AsyncComponent() {
   const [asyncCount] = useAtom(asyncAtom);
