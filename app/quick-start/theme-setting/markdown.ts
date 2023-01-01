@@ -1,5 +1,5 @@
 export const markdown = `
-## Theme Switcher with jotai atoms
+# Theme Switcher
 
 Developers love dark theme but setting up the theme can be very hectic for the developers as when there are many components in your app and you have to pass your theme props very deep in the component tree where things can become ambigous.
 
