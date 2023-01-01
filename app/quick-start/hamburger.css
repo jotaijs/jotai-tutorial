@@ -2,6 +2,19 @@
     z-index: 1;
 }
 
+.dark-menu {
+    background: black !important;
+    border-right: 1.5px solid #252525;
+}
+
+.dark-item {
+    color: rgb(212, 206, 206) !important;
+}
+
+.dark-item:hover {
+    background: #0d3532 !important;
+}
+
 #menu__toggle {
     opacity: 0;
     width: 30px;
