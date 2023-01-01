@@ -8,6 +8,59 @@
   background: black;
 }
 
+.dark {
+  --sp-syntax-color-tag: #5be4c6 !important;
+  background: black;
+  color: #737374;
+}
+
+.line-break-dark>h1, .line-break-dark>h2 {
+  color: white;
+}
+
+.next-link-dark {
+  color: white !important;
+}
+
+.dark-btn {
+  color: rgb(215, 212, 212);
+}
+
+.dark-btn:hover {
+  color: white;
+  background: #0d3532 !important;
+}
+
+.shadow-dark {
+  border-bottom: 1px solid #252525;
+}
+
+.dark-icon {
+  color: rgb(215, 212, 212);
+  width: 30px;
+  height: 30px;
+}
+
+.light-icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+}
+
+.theme-switcher {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+pre>div {
+  background: #14161b !important;
+}
+
+.language-js {
+  font-size: 15px !important;
+}
+
 h1,
 h2 {
   font-weight: 400;
