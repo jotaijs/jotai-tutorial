@@ -10,19 +10,24 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import Link from "next/link";
 
-function page() {
+import { themeAtom } from "../Header";
+import { useAtom } from 'jotai';
+
+
+function Page() {
+  const [theme] = useAtom(themeAtom)
   return (
-    <div className="lesson-cont">
+    <div className={`${theme} lesson-cont`}>
       <div className="mark-cont">
         <Markdown
-          className="line-break"
+          className={`line-break line-break-${theme}`}
           components={{
             code({ node, inline, className, children, ...props }: any) {
               const match = /language-(\w+)/.exec(className || "");
               return !inline && match ? (
                 <SyntaxHighlighter
-                  style={vscDarkPlus}
                   language={match[1]}
+                  style={vscDarkPlus}
                   PreTag="div"
                   {...props}
                 >
@@ -38,12 +43,13 @@ function page() {
         >
           {markdown}
         </Markdown>
-        <Link className="next-link" href="/quick-start/readonly-atoms">
+        <Link className={`next-link next-link-${theme}`} href="/quick-start/readonly-atoms">
           Next {"->"}
         </Link>
       </div>
 
       <Sandpack
+        theme={theme}
         template="react"
         files={{
           ...files,
@@ -67,4 +73,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

@@ -197,13 +197,6 @@ a {
   background-color: white;
 }
 
-.example {
-  position: absolute;
-  bottom: -35%;
-  right: 2%;
-  width: fit-content;
-}
-
 .home-def {
   max-width: 300px;
   margin-top: 100px;

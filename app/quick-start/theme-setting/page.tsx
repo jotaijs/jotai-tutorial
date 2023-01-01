@@ -16,7 +16,6 @@ import { useAtom } from 'jotai';
 
 function Page() {
   const [theme] = useAtom(themeAtom)
-  console.log({theme})
   return (
     <div className={`${theme} lesson-cont`}>
       <div className="mark-cont">

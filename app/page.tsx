@@ -63,27 +63,6 @@ export default function Home() {
           Playground
         </Link>
       </div>
-
-      <div className="example">
-        <Markdown
-          components={{
-            code({ node, inline, className, children, ...props }: any) {
-              const match = /language-(\w+)/.exec(className || "");
-              return !inline && match ? (
-                <SyntaxHighlighter language={match[1]} style={coldarkCold} PreTag="div" {...props}>
-                  {String(children).replace(/\n$/, "")}
-                </SyntaxHighlighter>
-              ) : (
-                <code className={className} {...props}>
-                  {children}
-                </code>
-              );
-            },
-          }}
-        >
-          {example}
-        </Markdown>
-      </div>
     </div>
   );
 }

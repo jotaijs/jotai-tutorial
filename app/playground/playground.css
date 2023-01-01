@@ -6,17 +6,82 @@
     font-size: 15px;
 }
 
-.newfile {
-    height: 40px;
+.sp-c-ctabmA {
+    border-radius: 0px !important;
+}
+
+.sp-close-button {
+    margin-bottom: 8px;
+}
+
+.left-dark-btn {
+    background: black !important;
+    color: white;
+}
+
+.dark-mid-btn {
+    background: black !important;
+    color: white;
+}
+
+.dark-mid-btn:hover {
+    background: #0d3532 !important;
+}
+
+.left-dark-btn:hover {
+    background: #0d3532 !important;
+}
+
+.newFile-light {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn {
     background: white;
-    height: inherit;
+    height: 55px;
     width: 70px;
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.newFile-dark {
+    background: black;
+    color: white !important;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playground-btn {
+    font-size: 15px;
+    padding: 5px;
+    background: transparent;
+    font-weight: 300;
+    height: 35px;
+    letter-spacing: 0.2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.playground-mid {
+    margin-left: -130px;
+}
+
+.playground-toogle {
+    margin-right: 20px;
+}
+
+.playground-btn:hover {
+    background: #d4d4d4;
+    transition: 0.3s;
 }
 
 a {
@@ -43,5 +108,14 @@ a {
 
     .sp-stack {
         height: 100vh !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .btn {
+        width: 50px;
+    }
+    .playground-mid {
+        margin-left: -100px;
     }
 }
