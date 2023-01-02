@@ -26,6 +26,11 @@ function Header() {
             Home
           </button>
         </a>
+        <a href='/examples'>
+          <button className={`header-btn ${appTheme}-btn`}>
+            Examples
+          </button>
+        </a>
         <a href='/playground'>
           <button className={`header-btn ${appTheme}-btn`}>
             Playground
