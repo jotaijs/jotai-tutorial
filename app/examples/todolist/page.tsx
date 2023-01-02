@@ -1,6 +1,6 @@
 "use client"
 
-import './playground.css'
+import "../../playground/playground.css"
 import {
   SandpackProvider,
   SandpackLayout,
@@ -10,12 +10,13 @@ import {
   useSandpack,
 } from "@codesandbox/sandpack-react";
 import { useEffect, useState } from "react";
-import { code } from './code'
-import { AiFillFileAdd, AiOutlineDelete, AiOutlineHome } from 'react-icons/ai'
+import { code, code1 } from "./code";
+import setupStyles from "./styles"
+import { AiFillFileAdd, AiOutlineDelete, AiOutlineHome } from "react-icons/ai"
 import { BsSun, BsFillMoonStarsFill } from "react-icons/bs"
 
-import { themeAtom } from "../quick-start/Header";
-import { useAtom } from 'jotai';
+import { themeAtom } from "../../quick-start/Header";
+import { useAtom } from "jotai";
 
 const NewFile = () => {
   const [theme, setTheme] = useAtom(themeAtom);
@@ -24,9 +25,14 @@ const NewFile = () => {
     setTheme();
   }
 
-  useEffect(() => {
-    sandpack.updateFile('/App.tsx', code)
-  }, [])
+  function updatedFiles() {
+    useEffect(() => {
+      sandpack.updateFile('/index.tsx', code1);
+      sandpack.deleteFile('/App.tsx')
+    }, [])
+  }
+
+  updatedFiles();
 
   const fileAdd = () => {
     const newName = (window.prompt('Enter the new file name:'));
@@ -61,9 +67,9 @@ const NewFile = () => {
             Quick Start
           </button>
         </a>
-        <a href='/examples'>
+        <a href='/playground'>
           <button className={`playground-btn ${theme}-mid-btn`}>
-            Examples
+            Playground
           </button>
         </a>
       </div>
@@ -82,11 +88,13 @@ function Page() {
     <div>
       <SandpackProvider
         theme={theme}
-        files={{}}
+        files={{ ...setupStyles, '/Todo.tsx': code }}
         template="react-ts"
         customSetup={{
           dependencies: {
-            jotai: "^1.12.0",
+            "jotai": "^1.12.0",
+            "antd": "^4.16.2",
+            "@react-spring/web": "9.2.3",
           },
         }}
       >

@@ -1,0 +1,78 @@
+.ex-switcher {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+.dark-head {
+    color: white !important;
+    border-bottom: 2px solid white !important; 
+}
+
+.dark-des {
+    color: #737374;
+}
+
+.dark-ex-btn {
+    color: white !important;
+}
+
+.dark-ex-btn:hover {
+    background: #0d3532 !important;
+}
+
+.example-btn {
+    font-size: 15px;
+    padding: 5px;
+    background: transparent;
+    font-weight: 300;
+    height: 35px;
+    letter-spacing: 0.2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.examples {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-head {
+    margin-top: 80px;
+}
+
+.exp-cont {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.li-head {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+}
+
+.li-des {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .exp-cont {
+        max-width: 400px;
+    }
+}

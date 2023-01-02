@@ -2,10 +2,6 @@
 
 import Image from "next/image";
 import jotia_mascot from "../public/jotai-mascot.png";
-import Markdown from "react-markdown";
-import { example } from "./example";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { coldarkCold } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import Link from "next/link";
 
 export default function Home() {
@@ -56,8 +52,8 @@ export default function Home() {
         <Link href="/quick-start/intro" className="btn-1">
           Quick start
         </Link>
-        <Link href="/" className="btn-2">
-          Tutorial
+        <Link href="/examples" className="btn-2">
+          Examples
         </Link>
         <Link href="/playground" className="btn-3">
           Playground
