@@ -40,6 +40,10 @@
     margin: 8px;
 }
 
+.example-btn:hover {
+    background: #d4d4d4;
+}
+
 .examples {
     min-height: 100vh;
     display: flex;
@@ -69,6 +73,7 @@
 
 .li-des {
     margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 700px) {

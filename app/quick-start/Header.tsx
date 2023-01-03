@@ -6,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai"
 import { atom, useAtom } from "jotai";
 import { BsSun, BsFillMoonStarsFill } from "react-icons/bs"
 
-const theme = atom('dark');
+const theme = atom('light');
 export const themeAtom = atom(get => get(theme), (get, set) => {
   set(theme, get(theme) === 'light'? 'dark': 'light')
 });

@@ -33,6 +33,10 @@ function Page() {
 			<div className="exp-cont">
 				<ul>
 					<li>
+						<a href="/examples/textLenght" className={`li-head ${theme}-head`}>Text Length example</a>
+						<p className={`li-des ${theme}-des`}>Count the length and show the uppercase of any text.</p>
+					</li>
+					<li>
 						<a href="/examples/todolist" className={`li-head ${theme}-head`}>Todos example</a>
 						<p className={`li-des ${theme}-des`}>Record your todo list by typing them into this app, check them off if you have completed the task, and switch between Completed and Incompleted to see the status of your task.</p>
 					</li>
