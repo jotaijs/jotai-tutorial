@@ -173,8 +173,8 @@ a {
 .top-cont {
   display: flex;
   position: absolute;
-  top: 7%;
-  left: 10%;
+  top: 5%;
+  left: 3%;
 }
 
 .btn-1:hover {
@@ -198,8 +198,27 @@ a {
 }
 
 .home-def {
-  max-width: 300px;
-  margin-top: 100px;
+  height: max-content;
+  max-width: 250px;
+  margin-top: 30px;
+  background: #d4d4d4;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.home-def::before {
+  border: solid transparent;
+  border-right: solid #d4d4d4;
+  border-width: 16px 24px 16px 0;
+  border-left: 0;
+  content: "";
+  margin-left: -36px;
+  margin-top: -45px;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  width: 0;
 }
 
 .lesson-cont {
