@@ -3,7 +3,7 @@
 - ✅ Showcase Examples.
 - ✅ Live Playground.
 
-### Lessons
+## Lessons
 - Introduction
 - Theme Setup
 - Persisting State
