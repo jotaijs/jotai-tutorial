@@ -40,6 +40,10 @@ function Page() {
 						<a href="/examples/todolist" className={`li-head ${theme}-head`}>Todos example</a>
 						<p className={`li-des ${theme}-des`}>Record your todo list by typing them into this app, check them off if you have completed the task, and switch between Completed and Incompleted to see the status of your task.</p>
 					</li>
+					<li>
+						<a href="/examples/hackerNews" className={`li-head ${theme}-head`}>Hacker News example</a>
+						<p className={`li-des ${theme}-des`}>Demonstrate a news article with Jotai, hit next to see more articles.</p>
+					</li>
 				</ul>
 			</div>
 		</div>

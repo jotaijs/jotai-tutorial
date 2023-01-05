@@ -10,7 +10,7 @@ Initialize a theme atom with a default value.
 const theme = atom('light');
 ~~~
 
-Passed the atom to the **useState** hook.
+Passed the atom to the \`useState\` hook.
 
 ~~~js
 const [appTheme, setAppTheme] = useAtom(theme);
