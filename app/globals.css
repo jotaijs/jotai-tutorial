@@ -54,6 +54,18 @@
 }
 
 pre>div {
+  border-radius: 8px;
+}
+
+p>code {
+  background: #e4e3e3;
+  padding: 3px;
+  border-radius: 5px;
+  color: black !important;
+  opacity: 0.8;
+}
+
+pre>div {
   background: #14161b !important;
 }
 
@@ -227,16 +239,26 @@ a {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 850px) {
+  .lesson-cont {
+    display: grid;
+  }
+  .mark-cont {
+    height: 90vh !important;
+  }
+  .custom-layout {
+    width: 100vw !important;
+  }
+}
+
 .mark-cont {
   overflow-y: scroll;
-  height: calc(100vh - 60px);
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
-  width: 38vw;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .next-link {

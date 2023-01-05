@@ -1,7 +1,3 @@
-.sp-layout {
-    height: 100vh !important;
-}
-
 .sp-c-bNbSGz {
     font-size: 15px;
 }
@@ -103,19 +99,32 @@ a {
 
 @media screen and (min-width: 900px) {
     .sp-c-ctabmA > .sp-file-explorer {
-        height: 100vh !important;
+        min-height: calc(100vh - 55px) !important;
+        overflow-y: scroll;
     }
 
     .sp-stack {
-        height: 100vh !important;
+        min-height: calc(100vh - 55px) !important;
+        overflow-y: scroll;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .btn {
         width: 50px;
     }
     .playground-mid {
         margin-left: -100px;
+    }
+    .sp-c-ctabmA > .sp-c-kLppIp {
+        height: 65vh !important;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .sp-c-ctabmA > .sp-file-explorer {
+        height: max-content !important;
+        overflow-y: scroll;
     }
 }
