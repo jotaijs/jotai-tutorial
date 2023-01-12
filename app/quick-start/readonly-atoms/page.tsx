@@ -7,7 +7,7 @@ import { markdown } from "./markdown";
 import files from "./code";
 import setupStyles from "./styles";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { vscDarkPlus } from "../../vscDarkPlus";
 import Link from "next/link";
 
 import { themeAtom } from "../Header";

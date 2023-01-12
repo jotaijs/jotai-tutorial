@@ -1,6 +1,6 @@
 export const vscDarkPlus = {
     "pre[class*=\"language-\"]": {
-        "color": "#d4d4d4",
+        "color": "#e4f0fc",
         "fontSize": "13px",
         "textShadow": "none",
         "fontFamily": "Menlo, Monaco, Consolas, \"Andale Mono\", \"Ubuntu Mono\", \"Courier New\", monospace",
@@ -23,7 +23,7 @@ export const vscDarkPlus = {
         "background": "#1e1e1e"
     },
     "code[class*=\"language-\"]": {
-        "color": "#d4d4d4",
+        "color": "#e4f0fc",
         "fontSize": "13px",
         "textShadow": "none",
         "fontFamily": "Menlo, Monaco, Consolas, \"Andale Mono\", \"Ubuntu Mono\", \"Courier New\", monospace",
@@ -67,7 +67,7 @@ export const vscDarkPlus = {
         "Opacity": ".7"
     },
     "doctype.doctype-tag": {
-        "color": "#569CD6"
+        "color": "#acd7ff"
     },
     "doctype.name": {
         "color": "#9cdcfe"
@@ -79,13 +79,13 @@ export const vscDarkPlus = {
         "color": "#6a9955"
     },
     "punctuation": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     ".language-html .language-css .token.punctuation": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     ".language-html .language-javascript .token.punctuation": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     "property": {
         "color": "#9cdcfe"
@@ -97,19 +97,19 @@ export const vscDarkPlus = {
         "color": "#569cd6"
     },
     "number": {
-        "color": "#b5cea8"
+        "color": "#e4f0fc"
     },
     "constant": {
         "color": "#9cdcfe"
     },
     "symbol": {
-        "color": "#b5cea8"
+        "color": "#e4f0fc"
     },
     "inserted": {
-        "color": "#b5cea8"
+        "color": "#e4f0fc"
     },
     "unit": {
-        "color": "#b5cea8"
+        "color": "#e4f0fc"
     },
     "selector": {
         "color": "#d7ba7d"
@@ -118,58 +118,58 @@ export const vscDarkPlus = {
         "color": "#9cdcfe"
     },
     "string": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "char": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "builtin": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "deleted": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     ".language-css .token.string.url": {
         "textDecoration": "underline"
     },
     "operator": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     "entity": {
         "color": "#569cd6"
     },
     "operator.arrow": {
-        "color": "#569CD6"
+        "color": "#acd7ff"
     },
     "atrule": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "atrule.rule": {
-        "color": "#c586c0"
+        "color": "#e4f0fc"
     },
     "atrule.url": {
         "color": "#9cdcfe"
     },
     "atrule.url.function": {
-        "color": "#dcdcaa"
+        "color": "#5de4c7"
     },
     "atrule.url.punctuation": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     "keyword": {
-        "color": "#569CD6"
+        "color": "#acd7ff"
     },
     "keyword.module": {
-        "color": "#c586c0"
+        "color": "#acd7ff"
     },
     "keyword.control-flow": {
-        "color": "#c586c0"
+        "color": "#e4f0fc"
     },
     "function": {
-        "color": "#dcdcaa"
+        "color": "#5de4c7"
     },
     "function.maybe-class-name": {
-        "color": "#dcdcaa"
+        "color": "#5de4c7"
     },
     "regex": {
         "color": "#d16969"
@@ -217,13 +217,13 @@ export const vscDarkPlus = {
         "color": "#808080"
     },
     "attr-value": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "attr-value.punctuation": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "attr-value.punctuation.attr-equals": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     "namespace": {
         "color": "#4ec9b0"
@@ -253,19 +253,19 @@ export const vscDarkPlus = {
         "color": "#9cdcfe"
     },
     "pre[class*=\"language-css\"]": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "code[class*=\"language-css\"]": {
-        "color": "#ce9178"
+        "color": "#5de4c7"
     },
     "pre[class*=\"language-html\"]": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     "code[class*=\"language-html\"]": {
-        "color": "#d4d4d4"
+        "color": "#e4f0fc"
     },
     ".language-regex .token.anchor": {
-        "color": "#dcdcaa"
+        "color": "#5de4c7"
     },
     ".language-html .token.punctuation": {
         "color": "#808080"
