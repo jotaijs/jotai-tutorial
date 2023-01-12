@@ -116,7 +116,7 @@ a {
 }
 
 .header-btn:hover {
-  background: #d4d4d4;
+  background: #dbe9fe;
   transition: 0.3s;
 }
 
@@ -174,7 +174,7 @@ a {
   top: 45%;
   left: 52%;
   transform: translate(-50%, -49%);
-  color: #d4d4d4;
+  color: #dbe9fe;
   cursor: pointer;
 }
 
@@ -213,7 +213,7 @@ a {
   height: max-content;
   max-width: 250px;
   margin-top: 30px;
-  background: #d4d4d4;
+  background: #dbe9fe;
   border-radius: 10px;
   text-align: center;
   padding: 10px;
@@ -221,7 +221,7 @@ a {
 
 .home-def::before {
   border: solid transparent;
-  border-right: solid #d4d4d4;
+  border-right: solid #dbe9fe;
   border-width: 16px 24px 16px 0;
   border-left: 0;
   content: "";
