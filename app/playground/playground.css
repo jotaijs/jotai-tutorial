@@ -99,12 +99,12 @@ a {
 
 @media screen and (min-width: 900px) {
     .sp-c-ctabmA > .sp-file-explorer {
-        min-height: calc(100vh - 55px) !important;
+        height:calc(100vh - 55px) !important;
         overflow-y: scroll;
     }
 
     .sp-stack {
-        min-height: calc(100vh - 55px) !important;
+        height:calc(100vh - 55px) !important;
         overflow-y: scroll;
     }
 }
