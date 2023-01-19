@@ -69,8 +69,8 @@ pre>div {
 }
 
 p>code {
-  background: #e4e3e3;
-  padding: 3px;
+  background: rgba(197, 196, 196, 0.5);
+  padding: 1.5px 5px 1.5px 5px;
   border-radius: 5px;
   color: black !important;
   opacity: 0.8;
