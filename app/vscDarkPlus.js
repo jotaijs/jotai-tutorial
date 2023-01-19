@@ -73,7 +73,7 @@ export const vscDarkPlus = {
         "color": "#9cdcfe"
     },
     "comment": {
-        "color": "#6a9955"
+        "color": "#a6accd"
     },
     "prolog": {
         "color": "#6a9955"

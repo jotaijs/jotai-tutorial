@@ -1,20 +1,75 @@
-const code = `import { atom, useAtom } from 'jotai';
+const code = `import { atom, useAtom } from "jotai";
 
-const textAtom = atom('write only atoms')
-const uppercase = atom(null, (get, set) => {
-    set(textAtom, get(textAtom).toUpperCase())
-})
+const dotsAtom = atom([]);
 
-export default function Page() {
-  const [uppercaseTextVal] = useAtom(textAtom);
-  const [, uppercaseText] = useAtom(uppercase);
+const drawingAtom = atom(false);
+
+const handleMouseDownAtom = atom(
+  null,
+  (get, set) => {
+    set(drawingAtom, true);
+  }
+);
+
+const handleMouseUpAtom = atom(null, (get, set) => {
+  set(drawingAtom, false);
+});
+
+const handleMouseMoveAtom = atom(
+  null,
+  (get, set, update: Point) => {
+    if (get(drawingAtom)) {
+      set(dotsAtom, (prev) => [...prev, update]);
+    }
+  }
+);
+
+const SvgDots = () => {
+  const [dots] = useAtom(dotsAtom);
   return (
-    <div>
-      <h1>{uppercaseTextVal}</h1>
-      <button onClick={uppercaseText}>ChangeToUpperCase</button>
-    </div>
-  )
-}`;
+    <g>
+      {dots.map(([x, y]) => (
+        <circle cx={x} cy={y} r="2" fill="#aaa" />
+      ))}
+    </g>
+  );
+};
+
+const SvgRoot = () => {
+  const [, handleMouseUp] = useAtom(
+    handleMouseUpAtom
+  );
+  const [, handleMouseDown] = useAtom(
+    handleMouseDownAtom
+  );
+  const [, handleMouseMove] = useAtom(
+    handleMouseMoveAtom
+  );
+  return (
+    <svg
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onMouseMove={(e) => {
+        handleMouseMove([e.clientX, e.clientY]);
+      }}
+    >
+      <rect width="200" height="200" fill="#eee" />
+      <SvgDots />
+    </svg>
+  );
+};
+
+const App = () => (
+  <>
+    <SvgRoot />
+  </>
+);
+
+export default App;
+`;
 
 const files = {
   "/App.js": {

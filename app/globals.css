@@ -8,6 +8,14 @@
   background: black;
 }
 
+.sp-syntax-keyword, .sp-syntax-tag, .sp-syntax-string{
+  color: steelblue !important;
+}
+
+.sp-syntax-definition {
+  color: #0ecba5 !important;
+}
+
 .dark {
   --sp-syntax-color-tag: #5be4c6 !important;
   background: black;
@@ -172,9 +180,9 @@ a {
   min-height: 100px;
   position: absolute;
   top: 45%;
-  left: 52%;
+  left: 51%;
   transform: translate(-50%, -49%);
-  color: #dbe9fe;
+  color: #d4d4d4;
   cursor: pointer;
 }
 
@@ -213,7 +221,7 @@ a {
   height: max-content;
   max-width: 250px;
   margin-top: 30px;
-  background: #dbe9fe;
+  background: #d4d4d4;
   border-radius: 10px;
   text-align: center;
   padding: 10px;
@@ -221,7 +229,7 @@ a {
 
 .home-def::before {
   border: solid transparent;
-  border-right: solid #dbe9fe;
+  border-right: solid #d4d4d4;
   border-width: 16px 24px 16px 0;
   border-left: 0;
   content: "";
