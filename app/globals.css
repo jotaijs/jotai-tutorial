@@ -16,10 +16,29 @@
   color: #3ccaad !important;
 }
 
+.sp-c-dRhJti.sp-c-gMfcns:last-child {
+  display: none;
+}
+
+.sp-console {
+  border-top: 1px solid #efefef;
+  background: white !important;
+  --sp-syntax-color-plain: #4f4e4e !important;
+}
+
+.sp-c-gxughg::after {
+  background: #efefef !important;
+}
+
+.cm-content.cm-readonly .cm-line {
+  background: white !important;
+}
+
 .dark {
   --sp-syntax-color-tag: #3ccaad !important;
   --sp-syntax-color-static: #3ccaad !important;
   --sp-syntax-color-keyword: #82b4e2 !important;
+  --sp-colors-errorSurface: #fffefe !important;
   background: black;
   color: #737374;
 }
