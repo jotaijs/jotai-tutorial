@@ -105,7 +105,7 @@ function Page() {
             autoSave="true"
           >
           </SandpackFileExplorer>
-          <SandpackCodeEditor showTabs closableTabs />
+          <SandpackCodeEditor showTabs closableTabs showLineNumbers />
           <SandpackPreview showNavigator />
         </SandpackLayout>
       </SandpackProvider>

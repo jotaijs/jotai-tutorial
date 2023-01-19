@@ -62,6 +62,7 @@ function Page() {
             "sp-tab-button": "custom-tab",
           },
           showTabs: true,
+          showLineNumbers: true
         }}
         customSetup={{
           dependencies: {
