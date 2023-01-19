@@ -8,7 +8,7 @@ export default function Page() {
   const [uppercaseText] = useAtom(uppercase);
   const handleClick = (e) => setLowercaseText(e.target.value);
   return (
-    <div>
+    <div className="app">
       <input value={lowecaseText} onChange={handleClick} />
       <h1>{uppercaseText}</h1>
     </div>

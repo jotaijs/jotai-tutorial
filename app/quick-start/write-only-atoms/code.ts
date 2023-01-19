@@ -47,16 +47,16 @@ const SvgRoot = () => {
   );
   return (
     <svg
-      width="200"
-      height="200"
-      viewBox="0 0 200 200"
+      width="100vw"
+      height="100vh"
+      viewBox="0 0 100vw 100vh"
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={(e) => {
         handleMouseMove([e.clientX, e.clientY]);
       }}
     >
-      <rect width="200" height="200" fill="#eee" />
+      <rect width="100vw" height="100vh" fill="#eee" />
       <SvgDots />
     </svg>
   );
