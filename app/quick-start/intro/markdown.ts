@@ -16,4 +16,11 @@ const [count, setCounter] = useAtom(counter);
 ~~~
 
 The atom we created is to be passed to \`useState\` hook with the help of jotai \`useAtom\` api, which returns an array of size 2, where the 1st element is a value and the 2nd element is a function, to set the value of the atom.
+
+Jotai considers anything to be an atom so you can create any type of atom you want whether it is atom of objects, arrays, or nested objects, and complexity keeps going on forever.
+~~~js
+const friendObj = atom({ name: "John", online: false });
+const friendsArray = atom([ "John", "David", "Micheal" ]);
+const nestedObj = atom({ friend1: { name: "John", age: 18 } });
+~~~
 `;
