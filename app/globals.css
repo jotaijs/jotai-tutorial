@@ -8,16 +8,18 @@
   background: black;
 }
 
-.sp-syntax-keyword, .sp-syntax-tag, .sp-syntax-string{
-  color: steelblue !important;
+.sp-syntax-keyword, .sp-syntax-tag{
+  color: #82b4e2 !important;
 }
 
-.sp-syntax-definition {
-  color: #0ecba5 !important;
+.sp-syntax-definition, .sp-syntax-string {
+  color: #3ccaad !important;
 }
 
 .dark {
-  --sp-syntax-color-tag: #5be4c6 !important;
+  --sp-syntax-color-tag: #3ccaad !important;
+  --sp-syntax-color-static: #3ccaad !important;
+  --sp-syntax-color-keyword: #82b4e2 !important;
   background: black;
   color: #737374;
 }
