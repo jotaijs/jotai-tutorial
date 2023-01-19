@@ -63,6 +63,7 @@
 
 pre>div {
   border-radius: 8px;
+  background-color: #252b37 !important;
 }
 
 p>code {
@@ -71,10 +72,6 @@ p>code {
   border-radius: 5px;
   color: black !important;
   opacity: 0.8;
-}
-
-pre>div {
-  background: #14161b !important;
 }
 
 .language-js {
