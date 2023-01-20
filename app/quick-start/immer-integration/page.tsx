@@ -44,11 +44,8 @@ function Page() {
           {markdown}
         </Markdown>
         <div className="pg-link">
-          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/async-read-atoms">
+          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/async-write-atoms">
             {"<-"} Prev
-          </Link>
-          <Link className={`next-link next-link-${theme}`} href="/quick-start/immer-integration">
-            Next {"->"}
           </Link>
         </div>
       </div>
@@ -72,7 +69,9 @@ function Page() {
         }}
         customSetup={{
           dependencies: {
-            jotai: "^1.12.0",
+            "jotai": "^1.12.0",
+            "jotai-immer": "0.1.0",
+            "immer": "9.0.16"
           },
         }}
       />

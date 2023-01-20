@@ -87,6 +87,10 @@ pre>div {
   background-color: #252b37 !important;
 }
 
+pre>div>code {
+  tab-size: 2 !important;
+}
+
 p>code {
   background: rgba(197, 196, 196, 0.5);
   padding: 1.5px 5px 1.5px 5px;
