@@ -16,7 +16,7 @@ function Hamburger() {
             <ul className={`menu__box ${theme}-menu`}>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/intro">Introduction</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/theme-setting">Theme Setup</a></li>
-                <li><a className={`menu__item ${theme}-item`} href="/quick-start/persisiing-state">Persisting State</a></li>
+                <li><a className={`menu__item ${theme}-item`} href="/quick-start/persisting-state">Persisting State</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/readonly-atoms">Read Only Atoms</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/write-only-atoms">Write Only Atoms</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/read-write-atoms">Read Write Atoms</a></li>

@@ -12,7 +12,7 @@ function AsyncComponent() {
   const [count] = useAtom(counter);
   const [, incCounter] = useAtom(asyncAtom);
   return (
-    <div>
+    <div className="app">
       <h1>{count}</h1>
       <button onClick={incCounter}>inc</button>
     </div>
@@ -50,7 +50,7 @@ function Component() {
     setGoal(request());
   }
   return (
-    <div>
+    <div className="app">
       <p>Todays Goal: {todoGoal.title}</p>
       <button onClick={handleClick}>New Goal</button>
     </div>
@@ -59,9 +59,11 @@ function Component() {
 
 export default function AsyncSuspense() {
    return (
-    <Suspense fallback={<span>loading...</span>}>
-      <Component />
-    </Suspense>
+    <div className="app">
+      <Suspense fallback={<span>loading...</span>}>
+        <Component />
+      </Suspense>
+    </div>
   )
 }
 `;

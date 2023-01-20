@@ -47,7 +47,7 @@
   color: white;
 }
 
-.next-link-dark {
+.next-link-dark, .prev-link-dark {
   color: white !important;
 }
 
@@ -287,13 +287,23 @@ a {
   padding: 20px 20px 0 20px;
 }
 
-.next-link {
+.pg-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next-link, .prev-link {
+  width: max-content;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   margin-bottom: 30px;
   font-size: 18px;
   color: black;
+}
+
+.next-link-intro {
+  margin-left: auto;
 }
 
 .custom-layout {

@@ -43,9 +43,14 @@ function Page() {
         >
           {markdown}
         </Markdown>
-        <Link className={`next-link next-link-${theme}`} href="/quick-start/write-only-atoms">
-          Next {"->"}
-        </Link>
+        <div className="pg-link">
+          <Link className={`next-link next-link-${theme}`} href="/quick-start/persisting-state">
+            {"<-"} Prev
+          </Link>
+          <Link className={`next-link next-link-${theme}`} href="/quick-start/write-only-atoms">
+            Next {"->"}
+          </Link>
+        </div>
       </div>
 
       <Sandpack

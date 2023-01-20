@@ -7,7 +7,7 @@ const asyncAtom = atom(async (get) => get(counter) * 5);
 function AsyncComponent() {
   const [asyncCount] = useAtom(asyncAtom);
   return (
-    <div>
+    <div className="app">
       <h1>{asyncCount}</h1>
     </div>
   )
