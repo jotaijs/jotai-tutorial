@@ -11,7 +11,7 @@ const readWriteAtom = atom(
 export default function Page() {
   const [doubleCount, incCount] = useAtom(readWriteAtom);
   return (
-    <div>
+    <div className="app">
       <h1>{doubleCount}</h1>
       <button onClick={incCount}>inc</button>
     </div>

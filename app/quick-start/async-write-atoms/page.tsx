@@ -43,9 +43,11 @@ function Page() {
         >
           {markdown}
         </Markdown>
-        <Link className={`next-link next-link-${theme}`} href="#">
-          Next {"->"}
-        </Link>
+        <div className="pg-link">
+          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/async-read-atoms">
+            {"<-"} Prev
+          </Link>
+        </div>
       </div>
 
       <Sandpack

@@ -3,6 +3,9 @@ const StylesCss = `
     font-family: sans-serif;
     font-weight: normal;
   }
+  .app {
+    width: 100vw;
+  }
 `;
 
 const setupStyles = {

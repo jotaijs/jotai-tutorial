@@ -33,7 +33,7 @@ const StylesCss = `
     // margin-left: -40px;
     height: 45px;
     width: 100px;
-    border: 2px solid #e8e7e7;
+    border: 2px solid #4f4e4e;
     cursor: pointer;
     font-size: 17px;
   }
