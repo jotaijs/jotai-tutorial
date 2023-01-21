@@ -20,6 +20,15 @@
   display: none;
 }
 
+.sp-tabs-scrollable-container {
+  padding-left: 0;
+}
+
+.sp-tab-button {
+  border: 1px solid #efefef;
+  letter-spacing: 0.4px;
+}
+
 .sp-console {
   border-top: 1px solid #efefef;
   background: white !important;
@@ -45,6 +54,11 @@
 
 .line-break-dark>h1, .line-break-dark>h2 {
   color: white;
+}
+
+.line-break>p>a {
+  color: #2463eb !important;
+  text-decoration: underline;
 }
 
 .next-link-dark, .prev-link-dark {

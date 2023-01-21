@@ -44,7 +44,7 @@ function Page() {
           {markdown}
         </Markdown>
         <div className="pg-link">
-          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/async-write-atoms">
+          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/official-utils">
             {"<-"} Prev
           </Link>
         </div>
