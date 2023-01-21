@@ -21,12 +21,11 @@
 }
 
 .sp-tabs-scrollable-container {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 .sp-tab-button {
-  border: 1px solid #efefef;
-  letter-spacing: 0.4px;
+  border-right: 1px solid rgba(170, 167, 167, 0.2) !important;
 }
 
 .sp-console {
@@ -49,7 +48,7 @@
   --sp-syntax-color-keyword: #82b4e2 !important;
   --sp-colors-errorSurface: #fffefe !important;
   background: black;
-  color: #737374;
+  color: #a3a3a4;
 }
 
 .line-break-dark>h1, .line-break-dark>h2 {
@@ -57,7 +56,8 @@
 }
 
 .line-break>p>a {
-  color: #2463eb !important;
+  margin-left: 10px;
+  color: #3ccaad !important;
   text-decoration: underline;
 }
 
@@ -106,10 +106,11 @@ pre>div>code {
 }
 
 p>code {
-  background: rgba(197, 196, 196, 0.5);
-  padding: 1.5px 5px 1.5px 5px;
+  color: #3ccaad !important;
+  background: rgba(219, 254, 248, 0.2);
+  padding: 0px 5px 0px 5px;
   border-radius: 5px;
-  color: black !important;
+  border-bottom: 2px solid #3ccaad;
   opacity: 0.8;
 }
 
@@ -190,7 +191,7 @@ a {
   left: 53%;
   transform: translate(-53%, -53%);
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .btn-1,
@@ -207,7 +208,7 @@ a {
   color: white;
   border: none;
   outline: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -236,6 +237,7 @@ a {
 .btn-1:hover {
   color: black;
   background-color: white;
+  box-shadow: 5px 5px black;
 }
 
 .btn-2 {
@@ -244,13 +246,13 @@ a {
 }
 
 .btn-2:hover {
-  color: white;
-  background-color: black;
+  box-shadow: 5px 5px black;
 }
 
 .btn-3:hover {
   color: black;
   background-color: white;
+  box-shadow: 5px 5px black;
 }
 
 .home-def {

@@ -1,4 +1,5 @@
-const code = `import { atom, useAtom } from "jotai";
+const code = `import { useEffect, useRef } from "react";
+import { atom, useAtom } from "jotai";
 
 const dotsAtom = atom([]);
 
@@ -28,11 +29,19 @@ const SvgDots = () => {
   const [dots] = useAtom(dotsAtom);
   return (
     <g>
-      {dots.map(([x, y]) => (
-        <circle cx={x} cy={y} r="2" fill="#aaa" />
+      {dots.map(([x, y], index) => (
+        <circle cx={x} cy={y} r="2" fill="#aaa" key={index} />
       ))}
     </g>
   );
+};
+
+const useCommitCount = () => {
+  const commitCountRef = useRef(0);
+  useEffect(() => {
+    commitCountRef.current += 1;
+  });
+  return commitCountRef.current;
 };
 
 const SvgRoot = () => {
@@ -69,6 +78,7 @@ const App = () => (
 );
 
 export default App;
+
 `;
 
 const files = {
