@@ -44,10 +44,10 @@ function Page() {
           {markdown}
         </Markdown>
         <div className="pg-link">
-          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/async-read-atoms">
+          <Link className={`prev-link prev-link-${theme}`} href="/quick-start/async-write-atoms">
             {"<-"} Prev
           </Link>
-          <Link className={`next-link next-link-${theme}`} href="/quick-start/official-utils">
+          <Link className={`next-link next-link-${theme}`} href="/quick-start/immer-integration">
             Next {"->"}
           </Link>
         </div>
@@ -72,7 +72,8 @@ function Page() {
         }}
         customSetup={{
           dependencies: {
-            jotai: "^1.12.0",
+            "jotai": "^1.12.0",
+            "lodash-es": "4.17.21"
           },
         }}
       />
