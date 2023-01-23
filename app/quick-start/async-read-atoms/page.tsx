@@ -13,7 +13,6 @@ import Link from "next/link";
 import { themeAtom } from "../Header";
 import { useAtom } from 'jotai';
 
-
 function Page() {
   const [theme] = useAtom(themeAtom)
   return (
@@ -54,7 +53,7 @@ function Page() {
       </div>
 
       <Sandpack
-        theme={theme}
+        theme={theme==='light'? 'light': 'dark'}
         template="react"
         files={{
           ...files,

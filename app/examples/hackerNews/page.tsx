@@ -85,7 +85,7 @@ function Page() {
   return (
     <div>
       <SandpackProvider
-        theme={theme}
+        theme={theme==='light'? 'light': 'dark'}
         files={{ }}
         template="react-ts"
         customSetup={{

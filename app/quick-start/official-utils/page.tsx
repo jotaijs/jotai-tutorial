@@ -54,7 +54,7 @@ function Page() {
       </div>
 
       <Sandpack
-        theme={theme}
+        theme={theme==='light'? 'light': 'dark'}
         template="react"
         files={{
           ...files,

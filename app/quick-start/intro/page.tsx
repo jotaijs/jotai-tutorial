@@ -43,13 +43,13 @@ function Page() {
         >
           {markdown}
         </Markdown>
-        <Link className={`next-link next-link-intro next-link-${theme}`} href="/quick-start/theme-setting">
+        <Link className={`next-link next-link-${theme}`} href="/quick-start/theme-setting">
           Next {"->"}
         </Link>
       </div>
 
       <Sandpack
-        theme={theme}
+        theme={theme==='light'? 'light': 'dark'}
         template="react"
         files={{
           ...files,
