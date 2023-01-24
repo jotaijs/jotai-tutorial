@@ -1,5 +1,4 @@
-const code = `import { useEffect, useRef } from "react";
-import { atom, useAtom } from "jotai";
+const code = `import { atom, useAtom } from "jotai";
 
 const dotsAtom = atom([]);
 
@@ -34,14 +33,6 @@ const SvgDots = () => {
       ))}
     </g>
   );
-};
-
-const useCommitCount = () => {
-  const commitCountRef = useRef(0);
-  useEffect(() => {
-    commitCountRef.current += 1;
-  });
-  return commitCountRef.current;
 };
 
 const SvgRoot = () => {

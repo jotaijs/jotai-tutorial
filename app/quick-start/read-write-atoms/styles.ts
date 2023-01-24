@@ -1,6 +1,7 @@
 const StylesCss = `
-  body {
-    font-family: sans-serif;
+  * {
+    padding: 0;
+    margin: 0;
   }
   .app {
     width: 100vw;
