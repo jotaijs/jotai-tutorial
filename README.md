@@ -1,4 +1,7 @@
 ## Learn **Jotai** without leaving your browser.
+
+![Jotai❤️](https://user-images.githubusercontent.com/85363195/214372347-f7142c0e-02e2-4cf7-b8c4-5b13096241cb.gif)
+
 - ✅ Interactive Lessons.
 - ✅ Showcase Examples.
 - ✅ Live Playground.
@@ -10,12 +13,10 @@
 - Read Only Atoms
 - Write Only Atoms
 - Read Write Atoms
+- Atom Creators
 - Async Read Atoms
 - Async Write Atoms
+- Official Utils
+- Integrations
 
-![jotai-readme-gif1](https://user-images.githubusercontent.com/85363195/210454208-51a22411-7671-44e7-b9d0-dcde63a9475c.gif)
-
-## Playground
-![jotai-readme-gif2](https://user-images.githubusercontent.com/85363195/210454231-e9f1d647-fb0a-47e0-86e2-459e31f7d0fc.gif)
-
-### For detail documentation headover to [jotai.org](https://jotai.org/).
+For detail documentation headover to [jotai.org](https://jotai.org/).
