@@ -43,9 +43,12 @@ function Page() {
         >
           {markdown}
         </Markdown>
-        <Link className={`next-link next-link-${theme}`} href="/quick-start/theme-setting">
-          Next {"->"}
-        </Link>
+        <div className="pg-link">
+          <div></div>
+          <Link className={`next-link next-link-${theme}`} href="/quick-start/theme-setting">
+            Next {"->"}
+          </Link>
+        </div>
       </div>
 
       <Sandpack

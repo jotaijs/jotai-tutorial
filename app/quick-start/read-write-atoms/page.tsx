@@ -47,7 +47,7 @@ function Page() {
           <Link className={`prev-link prev-link-${theme}`} href="/quick-start/write-only-atoms">
             {"<-"} Prev
           </Link>
-          <Link className={`next-link next-link-${theme}`} href="/quick-start/async-read-atoms">
+          <Link className={`next-link next-link-${theme}`} href="/quick-start/atom-creaters">
             Next {"->"}
           </Link>
         </div>

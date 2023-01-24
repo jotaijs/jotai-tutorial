@@ -1,7 +1,7 @@
 export const markdown = `
 # Async Write Atoms
 
-Async write atoms are another kind of async atom. When the write function of atom returns a promise.
+In Async write atoms the \`write\` function of atom returns a promise.
 
 ~~~js
 const counter = atom(0);
@@ -11,7 +11,7 @@ const asyncAtom = atom(null, async (set, get) => {
 });
 ~~~
 
-**Note**: An important note here is that async write function does not trigger the Suspense.
+**Note**: An important take here is that async write function does not trigger the Suspense.
 
 But an interesting pattern that can be achieved with Jotai is switching from async to sync to trigger suspending when wanted.
 

@@ -42,6 +42,10 @@
   background: white !important;
 }
 
+.cm-gutterElement {
+  font-size: 12px;
+}
+
 .dark {
   --sp-syntax-color-tag: #3ccaad !important;
   --sp-syntax-color-static: #3ccaad !important;
@@ -107,11 +111,9 @@ pre>div>code {
 
 p>code {
   color: #3ccaad !important;
-  background: rgba(219, 254, 248, 0.2);
+  background: rgba(196, 193, 193, 0.2);
   padding: 0px 5px 0px 5px;
   border-radius: 5px;
-  border-bottom: 2px solid #3ccaad;
-  opacity: 0.8;
 }
 
 .language-js {

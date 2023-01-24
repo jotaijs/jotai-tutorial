@@ -16,5 +16,5 @@ Passed the atom to the \`useState\` hook.
 const [appTheme, setAppTheme] = useAtom(theme);
 ~~~
 
-That's all we have to do to define a global theme state which is accessible to all components of your app.
+Yes, That's all we have to do to define a global theme state which is accessible to all components of your app.
 `;

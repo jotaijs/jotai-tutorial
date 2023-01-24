@@ -90,7 +90,7 @@ const DisplayName = () => {
 
 // Re-renders when birthAtom changes.
 const DisplayBirthday = () => {
-  const birth = useAtom(birthAtom);
+  const [birth] = useAtom(birthAtom);
   const n = useCommitCount();
   return (
     <div>
@@ -143,7 +143,7 @@ const IncrementBirthYear = () => {
       birth: { ...person.birth, year: person.birth.year + 1 }
     });
   };
-  return <button onClick={handleClick}>Increment birth month</button>;
+  return <button onClick={handleClick}>Increment birth year</button>;
 };
 
 export default function App() {
@@ -169,7 +169,7 @@ const files = {
   "/App.js": {
     code: code1,
   },
-  "/AtomWithDefault.js": {
+  "/AtomWithReset.js": {
     code: code2
   },
   "/SelectAtom.js": {

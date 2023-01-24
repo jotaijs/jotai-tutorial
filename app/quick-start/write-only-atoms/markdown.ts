@@ -1,7 +1,7 @@
 export const markdown = `
 # Write Only atoms
 
-With the help of writeOnly atoms you can modify the atoms it relies on. It's basically a two-way data binding, changing the derived atom also changes the parent atom, so use these atoms very carefully.
+With the help of writeOnly atoms you can modify the atoms it relies on. It's basically a two-way data binding, changing the derived atom also changes the parent atom and vice-versa, so use these atoms very carefully.
 
 ~~~js
 const textAtom = atom('write only atoms')
@@ -10,10 +10,9 @@ const uppercase = atom(null, (get, set) => {
 })
 ~~~
 
-The first value of the callback is always be null and second is the function to modify the atom value.
+The first value of the callback is always be null and second is the function to modify the atom value. Let's take a more practical use case of write-only atoms.
 
-Let's take a more practical use case of write-only atoms,
-Here we have an atom of positions of points we draw on the canvas and a \`drawing\` atom.
+Here we define a \`dotsAtom\` which is an atom of positions of points we draw on the canvas and a \`drawing\` atom.
 ~~~js
 const dotsAtom = atom([]);
 // true when we drawing on canvas
@@ -33,5 +32,5 @@ const handleMouseMoveAtom = atom(
 );
 ~~~
 
-**Note:** You must be thinking that why we not updating the atoms value directly, why we use a write-only atom to update it. Well updating the value using the write-only atom prevents the extra rerenders in out app.
+**Note:** You must be thinking that why we not updating the atoms value directly, why we use a write-only atom to update it's value. Well updating the value using the write-only atom prevents the extra rerenders in our app.
 `
