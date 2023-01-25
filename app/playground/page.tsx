@@ -86,7 +86,7 @@ function Page() {
         template="react-ts"
         customSetup={{
           dependencies: {
-            jotai: "^1.12.0",
+            jotai: "^1.9.2",
           },
         }}
       >

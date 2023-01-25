@@ -72,7 +72,7 @@ function Page() {
         }}
         customSetup={{
           dependencies: {
-            "jotai": "^1.12.0"
+            "jotai": "^1.9.2"
           },
         }}
       />

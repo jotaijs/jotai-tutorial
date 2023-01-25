@@ -69,7 +69,7 @@ function Page() {
         }}
         customSetup={{
           dependencies: {
-            "jotai": "^1.12.0",
+            "jotai": "^1.9.2",
             "jotai-immer": "0.1.0",
             "immer": "9.0.16"
           },
