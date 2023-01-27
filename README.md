@@ -7,16 +7,16 @@
 - ✅ Live Playground.
 
 ## Lessons
-- Introduction
-- Theme Setup
-- Persisting State
-- Read Only Atoms
-- Write Only Atoms
-- Read Write Atoms
-- Atom Creators
-- Async Read Atoms
-- Async Write Atoms
-- Official Utils
-- Integrations
+- [Introduction](https://jotai-tutorial.netlify.app/quick-start/intro)
+- [Theme Setup](https://jotai-tutorial.netlify.app/quick-start/theme-setting)
+- [Persisting State](https://jotai-tutorial.netlify.app/quick-start/persisting-state)
+- [Read Only Atoms](https://jotai-tutorial.netlify.app/quick-start/readonly-atoms)
+- [Write Only Atoms](https://jotai-tutorial.netlify.app/quick-start/write-only-atoms)
+- [Read Write Atoms](https://jotai-tutorial.netlify.app/quick-start/read-write-atoms)
+- [Atom Creators](https://jotai-tutorial.netlify.app/quick-start/atom-creaters)
+- [Async Read Atoms](https://jotai-tutorial.netlify.app/quick-start/async-read-atoms)
+- [Async Write Atoms](https://jotai-tutorial.netlify.app/quick-start/async-write-atoms)
+- [Official Utils](https://jotai-tutorial.netlify.app/quick-start/official-utils)
+- [Integrations](https://jotai-tutorial.netlify.app/quick-start/immer-integration)
 
 For detail documentation headover to [jotai.org](https://jotai.org/).
