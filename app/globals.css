@@ -210,7 +210,6 @@ a {
   color: white;
   border: none;
   outline: none;
-  /* border-radius: 10px; */
   cursor: pointer;
   transition: 0.3s;
 }

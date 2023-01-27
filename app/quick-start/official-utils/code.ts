@@ -1,4 +1,4 @@
-const code1 = `import AtomWithDefault from './AtomWithDefault.js'
+const code1 = `import AtomWithReset from './AtomWithReset.js'
 import SelectAtom from './SelectAtom.js'
 
 export default function App() {

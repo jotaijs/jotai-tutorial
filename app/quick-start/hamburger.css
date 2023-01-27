@@ -104,3 +104,7 @@ span {
 .menu__item:hover {
     background-color: #dbe9fe;
 }
+
+a, a>li {
+    text-decoration: none;
+}
