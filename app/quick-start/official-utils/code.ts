@@ -4,7 +4,7 @@ import SelectAtom from './SelectAtom.js'
 export default function App() {
   return (
     <div>
-      <AtomWithDefault />
+      <AtomWithReset />
       <SelectAtom />
     </div>
   )
