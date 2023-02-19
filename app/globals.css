@@ -13,6 +13,10 @@
   color: var(--selection-text-color);
 }
 
+.sp-stack {
+  width: 100% !important;
+}
+
 .sp-syntax-keyword,
 .sp-syntax-tag {
   color: #82b4e2 !important;
