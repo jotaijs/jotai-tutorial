@@ -2,12 +2,16 @@
     font-size: 15px;
 }
 
-.sp-c-ctabmA {
+.sp-layout {
     border-radius: 0px !important;
 }
 
 .sp-close-button {
     margin-bottom: 8px;
+}
+
+.sp-file-explorer {
+    overflow: scroll !important;
 }
 
 .left-dark-btn {
@@ -98,33 +102,18 @@ a {
 }
 
 @media screen and (min-width: 900px) {
-    .sp-c-ctabmA > .sp-file-explorer {
-        height:calc(100vh - 55px) !important;
+    .sp-c-ctabmA {
         overflow-y: scroll;
     }
-
-    .sp-stack {
+    .sp-stack, .sp-file-explorer {
         height:calc(100vh - 55px) !important;
         overflow-y: scroll;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .btn {
-        width: 50px;
-    }
-    .playground-mid {
-        margin-left: -100px;
-    }
-    .sp-c-ctabmA > .sp-c-kLppIp {
-        height: 65vh !important;
-        overflow: scroll;
-    }
-}
-
-@media screen and (max-width: 769px) {
     .sp-c-ctabmA > .sp-file-explorer {
-        height: max-content !important;
+        height: 100vh;
         overflow-y: scroll;
     }
 }
