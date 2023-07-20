@@ -240,10 +240,6 @@ a {
   cursor: pointer;
 }
 
-.home-svg:hover {
-  color: black;
-}
-
 .top-cont {
   display: flex;
   position: absolute;

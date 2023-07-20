@@ -1,25 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import jotia_mascot from "../public/jotai-mascot.png";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="home-cont">
-      <div className="top-cont">
-        <Image
-          className="jotai-img"
-          src={jotia_mascot}
-          alt="bhoot"
-          width={190}
-          height={170}
-        />
-        <p className="home-def">
-          状態 Primitive and flexible state management for React
-        </p>
-      </div>
-
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 289.19 99.77"
@@ -47,7 +32,6 @@ export default function Home() {
           fill="currentColor"
         ></path>
       </svg>
-
       <div className="home-btn">
         <Link href="/quick-start/intro" className="btn-1">
           Quick start
