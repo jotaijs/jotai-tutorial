@@ -38,10 +38,10 @@ import { atomWithImmer } from 'jotai-immer';
 const immerAtom = atomWithImmer(todo);
 ...
 const updateTodo = () => {
-	setAtomTodo(state => {
+	setAtomTodo(immerTodo => {
     // directly mutating the state with immer
 		immerTodo.todo.person.title = "new title";
-		return state;
+		return immerTodo;
 	});
 }
 ~~~
