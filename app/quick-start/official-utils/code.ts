@@ -79,7 +79,7 @@ const useCommitCount = () => {
 
 // Rerenders when nameAtom changes.
 const DisplayName = () => {
-  const name = useAtom(nameAtom);
+  const [name] = useAtom(nameAtom);
   const n = useCommitCount();
   return (
     <div>
