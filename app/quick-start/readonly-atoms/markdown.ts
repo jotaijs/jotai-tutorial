@@ -1,7 +1,7 @@
 export const markdown = `
 # Read Only atoms
 
-Readonly atoms are use to read the value of the other atoms. You can't set or change their value directly because these atoms rely on their parent atoms.
+Readonly atoms are used to read the value of the other atoms. You can't set or change their value directly because these atoms rely on their parent atoms.
 
 ~~~js
 const textAtom = atom('readonly');
