@@ -20,7 +20,7 @@ function Hamburger() {
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/readonly-atoms">Read Only Atoms</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/write-only-atoms">Write Only Atoms</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/read-write-atoms">Read Write Atoms</a></li>
-                <li><a className={`menu__item ${theme}-item`} href="/quick-start/atom-creaters">Atom Creaters</a></li>
+                <li><a className={`menu__item ${theme}-item`} href="/quick-start/atom-creators">Atom Creators</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/async-read-atoms">Async Read Atoms</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/async-write-atoms">Async Write Atoms</a></li>
                 <li><a className={`menu__item ${theme}-item`} href="/quick-start/official-utils">Official Utils</a></li>
