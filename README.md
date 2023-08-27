@@ -13,7 +13,7 @@
 - [Read Only Atoms](https://jotai-tutorial.netlify.app/quick-start/readonly-atoms)
 - [Write Only Atoms](https://jotai-tutorial.netlify.app/quick-start/write-only-atoms)
 - [Read Write Atoms](https://jotai-tutorial.netlify.app/quick-start/read-write-atoms)
-- [Atom Creators](https://jotai-tutorial.netlify.app/quick-start/atom-creaters)
+- [Atom Creators](https://jotai-tutorial.netlify.app/quick-start/atom-creators)
 - [Async Read Atoms](https://jotai-tutorial.netlify.app/quick-start/async-read-atoms)
 - [Async Write Atoms](https://jotai-tutorial.netlify.app/quick-start/async-write-atoms)
 - [Official Utils](https://jotai-tutorial.netlify.app/quick-start/official-utils)

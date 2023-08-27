@@ -1,5 +1,5 @@
 export const markdown = `
-# Atom Creaters
+# Atom Creators
 
 An atom creator means simply a function that returns an atom or a set of atoms. It's just a function and it's not some features that the library provides, but it's an important pattern to make a fairly complex use case. This avoids the boilerplate of having to set up another atom just to update the state of the first.
 
