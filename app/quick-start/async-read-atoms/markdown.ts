@@ -22,7 +22,7 @@ Jotai is inherently leveraging \`Suspense\` to handle asynchronous flows.
 </Suspense>
 ~~~
 
-But there is a more jotai way of doing this with the \`loadable api\` present in \`jotai/utils\`. By simply wrapping the atom in loadable util and it returns the value with one of the three states: \`loadable\`, \`hasData\` and \`hasError\`.
+But there is a more jotai way of doing this with the \`loadable api\` present in \`jotai/utils\`. By simply wrapping the atom in loadable util and it returns the value with one of the three states: \`loading\`, \`hasData\` and \`hasError\`.
 
 ~~~js
 {
