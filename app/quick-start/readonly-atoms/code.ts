@@ -4,12 +4,12 @@ const textAtom = atom('readonly atoms')
 const uppercase = atom((get) => get(textAtom).toUpperCase())
 
 export default function Page() {
-  const [lowecaseText, setLowercaseText] = useAtom(textAtom);
+  const [lowercaseText, setLowercaseText] = useAtom(textAtom);
   const [uppercaseText] = useAtom(uppercase);
   const handleClick = (e) => setLowercaseText(e.target.value);
   return (
     <div className="app">
-      <input value={lowecaseText} onChange={handleClick} />
+      <input value={lowercaseText} onChange={handleClick} />
       <h1>{uppercaseText}</h1>
     </div>
   )
