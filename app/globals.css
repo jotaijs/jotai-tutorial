@@ -150,7 +150,7 @@ h2 {
 }
 
 .header-cont {
-  padding: 0 15px 0 15px;
+  padding: 0 8px 0 8px;
   display: flex;
   justify-content: space-between;
   height: 60px;
@@ -170,6 +170,13 @@ h2 {
   cursor: pointer;
   border-radius: 10px;
   margin: 5px;
+}
+
+/* support Samsung Galaxy S8+ */
+@media screen and (max-width: 380px) {
+  .header-btn {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -199,7 +206,7 @@ a {
 .link-cont {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .home-btn {
