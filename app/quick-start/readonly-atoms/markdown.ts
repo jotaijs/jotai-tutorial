@@ -8,7 +8,7 @@ const textAtom = atom('readonly');
 const uppercase = atom((get) => get(textAtom).toUpperCase());
 ~~~
 
-These atoms takes a callback with a paramater \`get\` which allows us to read other atoms value. Changing the parent's value will also update the derived atom.
+These atoms takes a callback with a parameter \`get\` which allows us to read other atoms value. Changing the parent's value will also update the derived atom.
 
 ~~~js
 const firstName = atom('John');
